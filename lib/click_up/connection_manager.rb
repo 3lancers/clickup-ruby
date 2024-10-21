@@ -26,6 +26,7 @@ module ClickUp
     end
 
     private
+
     def resource_url
       uri = URI("#{api_base}#{namespace}#{path}")
       uri.query = URI.encode_www_form(data) if data.size > 0
@@ -42,8 +43,8 @@ module ClickUp
 
     def default_headers
       {
-        'Content-Type' => 'application/json',
-        'Authorization' => ClickUp.api_token
+        "Content-Type" => "application/json",
+        "Authorization" => ClickUp.api_token
       }
     end
 
