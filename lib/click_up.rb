@@ -9,6 +9,7 @@ require "click_up/connection_manager"
 require "click_up/api_resource"
 
 require "click_up/api_operations/create"
+require "click_up/api_operations/update"
 require "click_up/api_operations/get"
 require "click_up/api_operations/all"
 require "click_up/api_operations/delete"

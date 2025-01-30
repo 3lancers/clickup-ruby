@@ -20,6 +20,12 @@ module ClickUp
       format_response(net_http_response.body)
     end
 
+    def put
+      form_data = data.to_json if data.is_a?(Hash) && data.size > 0
+      net_http_response = https_client.put(resource_url.path, form_data, default_headers)
+      format_response(net_http_response.body)
+    end
+
     def delete
       net_http_response = https_client.delete(resource_url.path, default_headers)
       format_response(net_http_response.body)

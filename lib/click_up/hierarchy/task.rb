@@ -4,6 +4,7 @@ module ClickUp
   class Task < APIResource
     extend ClickUp::APIOperations::All
     extend ClickUp::APIOperations::Create
+    extend ClickUp::APIOperations::Update
     extend ClickUp::APIOperations::Get
     extend ClickUp::APIOperations::Delete
 

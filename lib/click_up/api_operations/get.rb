@@ -3,7 +3,7 @@
 module ClickUp
   module APIOperations
     module Get
-      def get(id=nil, **opts)
+      def get(id = nil, **opts)
         params = opts.clone
         unless params.has_key?(:id) || id
           raise ParamRequiredError, "id is a required parameter.", "id"

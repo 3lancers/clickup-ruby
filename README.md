@@ -44,6 +44,8 @@ ClickUp::Space.delete(323455)
 
 ## Folder
 ```ruby
+ClickUp::Folder.all(space_id: 3451451)
+
 ClickUp::Folder.create(space_id: 323455, name: 'Folder From API')
 
 ClickUp::Folder.get(756376)
@@ -53,9 +55,15 @@ ClickUp::Folder.delete(756376)
 
 ## List
 ```ruby
+ClickUp::List.all(folder_id: 3451451)
+
 ClickUp::List.create(space_id: 323455, name: 'Folderless list')
 
 ClickUp::List.create(folder_id: 756376, name: 'Foldered list')
+
+ClickUp::List.get(756376)
+
+ClickUp::List.delete(756376)
 ```
 
 ## Task
@@ -64,6 +72,12 @@ ClickUp::List.create(folder_id: 756376, name: 'Foldered list')
 ClickUp::Task.all(list_id: 4766363)
 
 ClickUp::Task.create(list_id: 4766363, name: 'Task from API')
+
+ClickUp::Task.update(4766363, name: 'Task from API')
+
+ClickUp::Task.get(756376)
+
+ClickUp::Task.delete(756376)
 ```
 
 # Additional Information
