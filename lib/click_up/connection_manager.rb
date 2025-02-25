@@ -28,7 +28,7 @@ module ClickUp
 
     def delete
       net_http_response = https_client.delete(resource_url.path, default_headers)
-      format_response(net_http_response.body)
+      format_response(net_http_response.body || "{}")
     end
 
     private
