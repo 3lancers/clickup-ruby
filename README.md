@@ -80,6 +80,23 @@ ClickUp::Task.get(756376)
 ClickUp::Task.delete(756376)
 ```
 
+## Field
+
+```ruby
+ClickUp::Field.all(list_id: 4766363)
+
+ClickUp::Field.all(folder_id: 4766363)
+
+ClickUp::Field.all(space_id: 4766363)
+
+ClickUp::Field.all(team_id: 4766363)
+
+ClickUp::Field.create(task_id: "123", field_id: "456")
+
+ClickUp::Field.delete(task_id: "123", field_id: "456")
+```
+
+
 # Additional Information
 Pull requests and comments are welcome.
 

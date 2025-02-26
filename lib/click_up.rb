@@ -16,6 +16,7 @@ require "click_up/api_operations/delete"
 
 require "click_up/hierarchy/comment"
 require "click_up/hierarchy/custom_item"
+require "click_up/hierarchy/field"
 require "click_up/hierarchy/folder"
 require "click_up/hierarchy/list"
 require "click_up/hierarchy/space"
