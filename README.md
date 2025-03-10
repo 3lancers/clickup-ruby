@@ -96,6 +96,14 @@ ClickUp::Field.create(task_id: "123", field_id: "456")
 ClickUp::Field.delete(task_id: "123", field_id: "456")
 ```
 
+## Member
+
+```ruby
+ClickUp::Field.all(list_id: 4766363)
+
+ClickUp::Field.all(task_id: 4766363)
+```
+
 
 # Additional Information
 Pull requests and comments are welcome.
