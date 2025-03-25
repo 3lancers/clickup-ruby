@@ -19,7 +19,7 @@ module ClickUp
         end
       end
 
-      def create(params = {})
+      def set(params = {})
         execute_request(:post, "/task/#{params[:task_id]}/field/#{params[:field_id]}", formatted_params(params))
       end
 
