@@ -15,10 +15,14 @@ module ClickUp
         elsif params.has_key?(:list_id)
           "/list/#{params[:list_id]}/comment"
         elsif params.has_key?(:comment_id)
-          "/list/#{params[:comment_id]}/reply"
+          "/comment/#{params[:comment_id]}/reply"
         else
           raise ArgumentError, "Either task_id or view_id or list_id or comment_id is required."
         end
+      end
+
+      def resource_path(params={})
+        "/comment/#{params[:id]}"
       end
 
       def rejected_params
